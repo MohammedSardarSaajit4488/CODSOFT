@@ -1,6 +1,6 @@
 # CODSOFT
 
 HERE:
-This repo is dedicated to CODSOFT Projects ONLY...
+This repo is dedicated to CODSOFT Projects...
 
 #EXCLUSIVE: WEB DEVOLOPMENT 
