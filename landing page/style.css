@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+body{
+    background-color: #010302;
+    margin :0;
+    font-family: 'Josefin Sans', sans-serif;    font-size: 20px;
+    overflow-x: hidden;
+}
+
+*::-webkit-scrollbar{
+    width: 0;
+}
+.container{
+    overflow: hidden;
+    height: max-content;
+
+}
+.banner{
+    height: 50vw;
+    position: relative;
+    overflow: hidden;
+}
+.banner .bg{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-position: center bottom;
+    transition: 0.1s;
+}
+.banner .bg:nth-child(1){
+    background-image: url(images/banner_0.png);
+}
+.banner .bg:nth-child(2){
+    background-image: url(images/banner_1.png);
+}
+.banner .bg:nth-child(3){
+    top: 32%;
+    text-align: center;
+} 
+.banner .bg:nth-child(3) h1, 
+.banner .bg:nth-child(3) h5
+{
+    color: #d1c3ae;
+    font-size: 50px;
+    margin: 0;
+    text-shadow: 0 0px 20px #d2af76;
+}
+.banner .bg:nth-child(3) h1
+{
+    font-size: 11vw;
+}
+.banner .bg:nth-child(4){
+    background-image: url(images/banner_2.png);
+}
+.banner .bg:nth-child(5){
+    background-image: url(images/banner_3.png);
+}
+.tab{
+    min-height: 100vh;
+    background-color: #010302;
+    z-index: 1;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.tab::before{
+    position: absolute;
+    height: 200px;
+    width: 100vw;
+    background: linear-gradient(
+        to top, #010302, transparent
+    );
+    content: '';
+    bottom: 100%;
+    left: 0;
+}
+.tab.tab1{
+    background:linear-gradient(
+        to top, #010302 0%, transparent 20% , #010302 80%
+   ),url(images/tab1.jpg);
+}
+.tab.tab2{
+    background:linear-gradient(
+        to top, #010302 0%, transparent 20% , #010302 80%
+   ),url(images/tab2.jpg);
+}
+.tab.tab1 .content{
+    width: 700px;
+    max-width: 90%;
+    color: #eee;
+}
+.tab.tab2 .content{
+    color: #eee;
+    width: 900px;
+    max-width: 90%;
+}
+.tab.tab2 .content .des{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.tab.tab3 {
+    background-color: #010302;
+    color: #eee;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.tab.tab3 .content {
+    width: 700px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.tab.tab3 .content .des {
+    margin-top: 30px;
+}
+
+.tab.tab3 .content .des p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.tab.tab3 .content form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tab.tab3 .content form input,
+.tab.tab3 .content form textarea,
+.tab.tab3 .content form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.tab.tab3 .content form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab.tab3 .content form button:hover {
+    background-color: #45a049;
+}
+
+.tab.tab3 .content .contact-info {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.tab.tab3 .content .contact-info h3 {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.tab.tab3 .content .contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tab.tab3 .content .contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.tab.tab3 .content .contact-info ul li strong {
+    color: #4CAF50;
+}
+
+.tab.tab3 .content .contact-info .social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab.tab3 .content .contact-info .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.tab.tab3 .content .contact-info .social-icons a img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab.tab3 .content .contact-info .social-icons a:hover {
+    transform: scale(1.2);
+}
