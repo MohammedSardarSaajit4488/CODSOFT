@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0e5ec;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    background-color: #e0e5ec;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 10px 10px 20px #b8b9be, -10px -10px 20px #ffffff;
+    width: 340px;
+}
+
+.display {
+    background-color: #e0e5ec;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 24px;
+    box-shadow: inset 5px 5px 10px #b8b9be, inset -5px -5px 10px #ffffff;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 80px;
+    gap: 15px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e0e5ec;
+    box-shadow: 5px 5px 10px #b8b9be, -5px -5px 10px #ffffff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:active {
+    box-shadow: inset 5px 5px 10px #b8b9be, inset -5px -5px 10px #ffffff;
+}
+
+#toggleSci {
+    background-color: #d0d5dc;
+}
+
+.sci-btn {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.sci-btn:nth-child(n+21) {
+    grid-column: 5;
+}
