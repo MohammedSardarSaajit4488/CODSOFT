@@ -36,10 +36,6 @@ Copy code
 
 This project implements a neumorphic-styled scientific calculator using HTML, CSS, and JavaScript.
 
-## Screenshots
-
-![Preview 1](path/to/preview1.png) ![Preview 2](path/to/preview2.png)
-
 ## Features
 
 - Basic arithmetic operations (+, -, *, /)
