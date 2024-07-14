@@ -13,7 +13,7 @@ This project is a responsive landing page designed using HTML, CSS, and JavaScri
 
 ## Demo
 
-![Landing Page Preview](landing-page-preview.png)
+![Landing Page Preview](landing%20page/Preview.png)
 
 ## Features
 
