@@ -4,7 +4,7 @@ This project implements a neumorphic-styled scientific calculator using HTML, CS
 
 ## Screenshots
 
-![Preview 1](path/to/preview1.png) ![Preview 2](path/to/preview2.png)
+![Preview 1](Calculator/Preview1.png) ![Preview 2](Calculator/Preview2.png)
 
 ## Features
 
