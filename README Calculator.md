@@ -2,9 +2,12 @@
 
 This project implements a neumorphic-styled scientific calculator using HTML, CSS, and JavaScript.
 
-## Screenshots
+## Demo
 
-![Preview 1](Calculator/Preview1.png) ![Preview 2](Calculator/Preview2.png)
+<p align="center">
+  <img src="Calculator/Preview1.png" width="400" alt="Preview 1" />
+  <img src="Calculator/Preview2.png" width="400" alt="Preview 2" />
+</p>
 
 ## Features
 
