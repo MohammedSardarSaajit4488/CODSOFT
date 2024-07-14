@@ -5,7 +5,7 @@ This project implements a neumorphic-styled scientific calculator using HTML, CS
 ## Demo
 
 <p align="center">
-  <img src="" width="400" alt="Preview 1" />
+  <img src="Calculator/Preview1.png" width="400" alt="Preview 1" />
   <img src="Calculator/Preview2.png" width="400" alt="Preview 2" />
 </p>
 
