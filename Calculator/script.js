@@ -29,9 +29,20 @@ function deleteLastChar() {
 
 function calculate() {
     try {
+        // Count open and close parentheses
+        let openCount = (displayValue.match(/\(/g) || []).length;
+        let closeCount = (displayValue.match(/\)/g) || []).length;
+
+        // Automatically close any unclosed open parentheses
+        let expression = displayValue;
+        for (let i = 0; i < (openCount - closeCount); i++) {
+            expression += ')';
+        }
+
         // Replace '^' with '**' for exponentiation
-        displayValue = displayValue.replace(/\^/g, '**');
-        displayValue = eval(displayValue).toString();
+        expression = expression.replace(/\^/g, '**');
+        displayValue = eval(expression).toString();
+
     } catch (error) {
         displayValue = 'Error';
     }
