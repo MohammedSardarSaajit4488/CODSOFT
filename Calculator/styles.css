@@ -28,9 +28,17 @@ body {
     white-space: nowrap;
 }
 
+/* Updated standard buttons grid to a 4-column layout */
 .buttons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr) 80px;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px;
+}
+
+/* New: Scientific calculator buttons layout to match the preview (5 columns) */
+.scientific-buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
     gap: 15px;
 }
 
